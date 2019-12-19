@@ -78,6 +78,7 @@ LIMIT 0, 1000
 
 -- Date: 2019-12-19 16:33
 */
+#
 INSERT INTO `` (`id`,`name`,`created_time`,`updated_time`,`creator`) VALUES (1,'java','2019-10-28 16:37:26.405000','2019-10-28 16:37:26.443000','admin');
 INSERT INTO `` (`id`,`name`,`created_time`,`updated_time`,`creator`) VALUES (2,'JavaScript','2019-10-28 16:37:26.405000','2019-10-28 16:37:26.443000','admin');
 INSERT INTO `` (`id`,`name`,`created_time`,`updated_time`,`creator`) VALUES (4,'c++','2019-10-28 16:37:26.405000','2019-10-28 16:37:26.443000','admin');
