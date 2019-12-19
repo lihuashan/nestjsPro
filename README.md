@@ -66,7 +66,6 @@ database: 'lhsvs',
 [Nest] 8616   - 2019-12-19 15:27:08   [RoutesResolver] CalligraphyController {/calligraphy}: +0ms
 [Nest] 8616   - 2019-12-19 15:27:08   [RouterExplorer] Mapped {/, GET} route +1ms
 [Nest] 8616   - 2019-12-19 15:27:08   [NestApplication] Nest application successfully started +2ms`
-##
-# 成功启动服务端
+# 看到以上信息则 成功启动服务端
 
 # 浏览器打开： http://localhost:4000/home
