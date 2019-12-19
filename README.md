@@ -80,12 +80,19 @@ LIMIT 0, 1000
 */
 #
 INSERT INTO `` (`id`,`name`,`created_time`,`updated_time`,`creator`) VALUES (1,'java','2019-10-28 16:37:26.405000','2019-10-28 16:37:26.443000','admin');
+#
 INSERT INTO `` (`id`,`name`,`created_time`,`updated_time`,`creator`) VALUES (2,'JavaScript','2019-10-28 16:37:26.405000','2019-10-28 16:37:26.443000','admin');
+#
 INSERT INTO `` (`id`,`name`,`created_time`,`updated_time`,`creator`) VALUES (4,'c++','2019-10-28 16:37:26.405000','2019-10-28 16:37:26.443000','admin');
+#
 INSERT INTO `` (`id`,`name`,`created_time`,`updated_time`,`creator`) VALUES (5,'TypeORM','2019-10-28 16:37:26.405000','2019-10-28 16:37:26.443000','admin');
+#
 INSERT INTO `` (`id`,`name`,`created_time`,`updated_time`,`creator`) VALUES (8,'python','2019-10-28 17:45:46.665000','2019-10-28 17:45:46.665000','admin');
+#
 INSERT INTO `` (`id`,`name`,`created_time`,`updated_time`,`creator`) VALUES (9,'angular','2019-10-28 17:55:43.939000','2019-10-28 17:55:43.939000','admin');
+#
 INSERT INTO `` (`id`,`name`,`created_time`,`updated_time`,`creator`) VALUES (10,'css','2019-10-28 18:05:19.297000','2019-10-28 18:05:19.297000','admin');
+#
 INSERT INTO `` (`id`,`name`,`created_time`,`updated_time`,`creator`) VALUES (11,'Nestjs','2019-11-28 10:44:17.073909','2019-11-28 10:44:17.073909','admin');
 
 
