@@ -25,6 +25,7 @@ function bootstrap() {
             CookieName: 'CookieValue; SameSite=Lax;',
         });
         yield app.listen(4000);
+        console.log(`Application is running on: ${yield app.getUrl()}`);
     });
 }
 bootstrap();
