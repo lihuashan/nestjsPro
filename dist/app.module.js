@@ -30,7 +30,7 @@ AppModule = __decorate([
                 host: 'localhost',
                 port: 3306,
                 username: 'root',
-                password: 'huashan',
+                password: 'huashan211!',
                 database: 'lhsvs',
                 entities: [path_1.join(__dirname, '**/**.entity{.ts,.js}')],
                 synchronize: true,
