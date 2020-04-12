@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
 const users_entity_1 = require("./users.entity");
 const category_entity_1 = require("./category.entity");
+const comment_entity_1 = require("./comment.entity");
 let Article = class Article {
 };
 __decorate([
@@ -43,6 +44,10 @@ __decorate([
     __metadata("design:type", Boolean)
 ], Article.prototype, "recommendation", void 0);
 __decorate([
+    typeorm_1.Column({ default: 0 }),
+    __metadata("design:type", Number)
+], Article.prototype, "viewNum", void 0);
+__decorate([
     typeorm_1.CreateDateColumn(),
     __metadata("design:type", Date)
 ], Article.prototype, "created_time", void 0);
@@ -58,6 +63,10 @@ __decorate([
     typeorm_1.ManyToOne(type => category_entity_1.Category, category => category.articles),
     __metadata("design:type", category_entity_1.Category)
 ], Article.prototype, "category", void 0);
+__decorate([
+    typeorm_1.OneToMany(type => comment_entity_1.Comment, comment => comment.article),
+    __metadata("design:type", Array)
+], Article.prototype, "comment", void 0);
 Article = __decorate([
     typeorm_1.Entity()
 ], Article);

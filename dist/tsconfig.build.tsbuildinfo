@@ -2157,17 +2157,25 @@
         "version": "42ea9d446208e3d72d410dcb67d420fa0ba0ef864b5fcc403cdc089458b45429",
         "signature": "a40205830acd54eb3a16d08f1128abb386a951bbfdcb420d1ca768cab0bf5a3e"
       },
+      "../src/db/replycomment.entity.ts": {
+        "version": "a522dadd23ccdc47f2a9c844a5f58cbad56c9a005f12013ae8ad89cb8aba0f8b",
+        "signature": "d2587da315bc647a5759f1569ee0a8e325bc363cb7cd9c435db33b3210535372"
+      },
+      "../src/db/comment.entity.ts": {
+        "version": "c762fdd25da75719ce39fe1ab5b28564b5bc14a5a463a204c4ec4759aa72f848",
+        "signature": "0784118f1870c9c0a6037ce7adea578fd309e0615f0dc9588e649b7be2c18e25"
+      },
       "../src/db/article.entity.ts": {
-        "version": "f676512dcd1b24fdd1fd0c1261dcf2b31a655f7c14976e3093cb87dd7194c319",
-        "signature": "4c105282f425baf27f0f006620e11e7cd8ab7bd42509773af8c4580395041d5a"
+        "version": "ef238fa5c6679f7ed4533004d4af84ba34e635ae6435eb34cc8526695e7a58af",
+        "signature": "2837893db5179822544d75ea177d27d8c0bb4254cdfe7c3c6bf8ae738861e2d3"
       },
       "../src/db/users.entity.ts": {
-        "version": "9d37d4ad7813047740c803cfef24077319c629d0ea6414aada1b791f4ce720b5",
-        "signature": "d2ac7e0cc0a368328d0de4857960d4a366837bc48d9e577ac3bafc441674b475"
+        "version": "25fdfdf7d3c72774eb2d3384376dbdf767eb222fedb774c6c64f44e42f5c3fac",
+        "signature": "391f66fd960ec67d1b7c8f8038460d98e478186cef9df2f9dcc2fc3221aa8430"
       },
       "../src/user/user.service.ts": {
-        "version": "d213359c4c41f775c568b05a8d5b43394576f191533814fe17ff3fee9cf72c73",
-        "signature": "56125e6920510a1ebcc70527918c9ae9cb9f89b1c8a99e06d6c2cff53d2dfb79"
+        "version": "92f3d09a1f29ab200481fb2d6bb1de0894c02c7ce19a9e2167923696bf22318a",
+        "signature": "4be73f166e621c233f5e762ff37327a311cf6ac98340d87420c146ee0de360da"
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
         "version": "3ee1c4479498ce568cf7789174c181a68a7f7f16f7b338132ded0daf24a8a971",
@@ -2198,12 +2206,16 @@
         "signature": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078"
       },
       "../src/auth/auth.service.ts": {
-        "version": "ee8ae6f7918cb6cf6ac91a6ea38e9792209ea570ea9b0a6449974c8aa7aa4fd6",
+        "version": "4d910b1c2bd1d1c61b2c5fbfc311ee7745a91352346d7d39697673c1cdd9c51c",
         "signature": "c73e4a4179d499d6c9394e76aa2e5822ac945f8011aa6ab36bef55ffbec0a089"
       },
+      "../src/common/utils.ts": {
+        "version": "315e44359c0df47ac33b5ef3a534589746cc48b1f527dd303c9be7168a89e540",
+        "signature": "1c8b6b939b25e41c279393a2e2099e8b844003a3f2a36682aa95a2fb35e7c443"
+      },
       "../src/app.controller.ts": {
-        "version": "16c59e04185891d24c866067b0c89895607e532044ace826380a0d479ac5d45e",
-        "signature": "47b950d7f1e367f70ff93aecbb8298fbd9766efcedb2873eb26b421331dd9e73"
+        "version": "068084ee05b931244e8048a9004a4cfa080e0a48583426cd3d83195ebc079887",
+        "signature": "0eb1666650c4874518ad02b023d7965bf8a29b5dd482974e60bd65a6e0aca902"
       },
       "../src/app.service.ts": {
         "version": "d508a24f037c52c656ec582783fd52913e4338cd79626f8c9a4c72e2b05f4d1b",
@@ -2226,12 +2238,12 @@
         "signature": "9e36626cb39f17790cf2403e2e54d8a74542da63e2a49aba7061133a1af26dcd"
       },
       "../src/auth/auth.module.ts": {
-        "version": "6070ca456e30bd54d1ccf0dab8f90296ec74661e5b350954730bdcd1adc5da03",
+        "version": "0051801ce9e8c3027cefed914664ad07524e398c6355805c13a0a9e373cb0c72",
         "signature": "2e5d258cf85349b02b015c3f1b8873c152d182c3819a7ccc3aff16fc3037a5fc"
       },
       "../src/article/article.service.ts": {
-        "version": "f17c26ca4e3e5a97bbc7535619acd04c4928f96345a485a38103c089c87bfc78",
-        "signature": "3d2bf71ad5f56153ef41c660ab89388e48b757ec121d5a52bdc9e7ef9066e492"
+        "version": "e1d0b1e346ef443484b03a2df028dd10bf8398feaedc1728c8d9c804a8d274bd",
+        "signature": "9f4d67b74eea846591e71ed5bcb67768e4539c8793a8995644b60e9750a061dc"
       },
       "../src/category/category.service.ts": {
         "version": "805a5e3385f247c8d4e90834307b9c2ba5bfc61a26db77ea7ed8c3276c44d801",
@@ -2250,7 +2262,7 @@
         "signature": "7ea49da0e0c64921a5a341078c00e86a70fa6e0e4585e6492b0a81423e5e03c8"
       },
       "../src/article/article.detail.controller.ts": {
-        "version": "9fdd3f1280f57373a9d1353e4ca365cd32ca2bba9ddf089c3382e30a9a7d5544",
+        "version": "0390549ead53504725225a896d2e60848b4ae4d3e29b21d2b07ceb4e71e8582a",
         "signature": "674f76ad9612872e0622fa4c5f68ee2c5f0de507a06eab20d6df8163f0785792"
       },
       "../src/article/article.module.ts": {
@@ -2334,47 +2346,79 @@
         "signature": "e3cd60be3c4f95c43420be67eaa21637585b7c1a8129f9b39983bbd294f9513c"
       },
       "../src/upload/upload.controller.ts": {
-        "version": "dd11c13f631bca68d5760e8834588611306ee755ea6c77f2f4ffbbea6e43073c",
+        "version": "b0eb35bc7fa57066f9749f67e1a0462809c5968c5d0035d76f4720fed36a1c13",
         "signature": "36393360db21a796b060cc059db2bb0131cc96e7cce3f94d2374705aaff0fde2"
       },
       "../src/upload/upload.module.ts": {
         "version": "76681d748353c8ebcbe3066d45e5c4e278fa1d29a7377e582de7489f7a47b1fb",
         "signature": "0130e2f523b9ad920910011643cf7e5876a950a8af3fc82366d12f070c44bc49"
       },
-      "../src/common/utils.ts": {
-        "version": "5ca5cd1b5c7e7f5420b592714c3755a9438e67f411a120228fca628dd115711e",
-        "signature": "9fd7eb3f282c5c4100662aef5320db5d572ae91ad2e6200b02e4e63b78a5609f"
+      "../node_modules/moment/moment.d.ts": {
+        "version": "d62fa6fe33566fa743b3d6715a1a2fe46e937ba9d2ba158563c5744315d438a7",
+        "signature": "d62fa6fe33566fa743b3d6715a1a2fe46e937ba9d2ba158563c5744315d438a7"
       },
       "../src/pc-client/home/home.controller.ts": {
-        "version": "46761d1aa7c7ac786933f7180b9da9bcef50a8d3da3ba43fefc26f50da452a11",
+        "version": "e17f9afedf780c42247fc473783f6bd855710d82c391f4bdb2b9b79ef086a879",
         "signature": "6097b8620116b2836eaa96d5adfe86322a366354f035a433237bc22b66ce2df6"
       },
+      "../src/comment/comment.service.ts": {
+        "version": "553afb25196ffc8411ae27665c0dad93c4621534f1bb3c1d01b1f64d5c18b3d3",
+        "signature": "2b7dd73e9bb9115f6cfb4e997375b72ab365b8472f5ff1afe4ae541973b00a1e"
+      },
       "../src/pc-client/home/detail.controller.ts": {
-        "version": "d97e1d49bc355fc5cfc5d0f7a68b4686ed904e88c5c6e1de3b3ada54a3550ec8",
-        "signature": "83e0d3cf63b380c6bee23e97648b4488f7c7dc16d28df1e9c8652f3ef6d30d48"
+        "version": "845592ac1615d9dbf5ef47282b5bce1b869919bf45979d3c1acee0bfbefc4a25",
+        "signature": "ca2c066d7cb008eca1c34b5c86b0b8a9a6713df2b0adeb394ecb526f343cc36f"
+      },
+      "../src/db/messageuser.entity.ts": {
+        "version": "b9026426c2e0aa943ba938e5c9e12c90483e3eaea91a4acb5ad69d0169b46bcc",
+        "signature": "ef6a63c3ae9aca5996ce8fd3b93baf9505f8febbb57c76019a7bc3c3cb59e1d4"
       },
       "../src/pc-client/home/home.category.controller.ts": {
         "version": "a9f9173d9a7c6b568aac1f97df287a93b908895c1d46c4c94e87c9949cac7000",
         "signature": "056037ca6c45fbcc69c9ba6904753f29f417866bc67c112c12c10e58fe5b1489"
       },
       "../src/pc-client/home/search.article.controller.ts": {
-        "version": "dfbdc88f60e6b50f8879dbf19b64f84d9e847c2232ae845adae5dfeba0311ea6",
-        "signature": "d70cf044a29e7e416a2fe3b145dc38f76cfb97675aa6396a0f7ec7f46a71a50d"
+        "version": "d72bffb9459e4e9cff97041b66157d33664997f63e31f54c587127d2b0cfd48f",
+        "signature": "b0b117c90c49340d766b8a31e562ea2ab4a5b77287a3de77e39c4e82e6fd0641"
+      },
+      "../src/pc-client/pc.client.service.ts": {
+        "version": "86e5739537059c79b3532184890d4f87d7fd1f9a32d3a66e26b705757cdf3017",
+        "signature": "b38f92ce8a94388bc3c9e629756d85acbb1e2ee21bd403780f849a08f2acbd9b"
       },
       "../src/pc-client/home/contact.controller.ts": {
-        "version": "7e767f94154e147da7a6e2a5c54c3c671de3f88f6b91d4411defb927182cfcd4",
-        "signature": "79b215438dfa4ccbccdbe83a6488e333f8c512e8f8b451a882b9699c614ae456"
+        "version": "922d0da26cb264ad5cacffe6725ada0d4cbbb5678b12e296da24612062587505",
+        "signature": "9b11072058f70b67c9479f917b62438ab29a1f2b5a6ee3085b827b92053eeaa7"
+      },
+      "../src/comment/comment.module.ts": {
+        "version": "ed2f4b59b6e3c7f77774dc9981209f54047c05fd619de6c2bbcb984b7b3bd7b9",
+        "signature": "b8955a5bb7bd84df16291b5ffeacfac8fa927c435d19015ba731dbf6906154e6"
+      },
+      "../src/pc-client/home/comment.controller.ts": {
+        "version": "3d2b95e7ae62eec0898da808a646da325bf1debd767605d78e6ce89bf9922d44",
+        "signature": "ab6dab5703787d993c0ed6cec7d66a23802e8007096f423b3d40ee8dc742b3d1"
+      },
+      "../src/pc-client/home/register.controller.ts": {
+        "version": "e19a20762a125c62e43fdf12cabc9d93d299ac0acc6ce6cd0373e019c8645d11",
+        "signature": "8fdcd883507df4c58ad0078b93f02453a5bf4324aa915b264ec5843f512ea5fc"
+      },
+      "../src/pc-client/home/login.controller.ts": {
+        "version": "7a8eb9f004aad31f87868b9d9a1941305a3704bc44929ba2216d604dac0dd0f4",
+        "signature": "e724733387a774dea22f09f95470d15c3118682ccae1c58d220d014f6a23d577"
       },
       "../src/pc-client/home/home.module.ts": {
-        "version": "fea6d0613040f3b1b953472aa69dea9aa3d9123dc4cd8dba41640c877b80dbd0",
+        "version": "b4bd6db9c512fa048dd97d077578b4bf665d5a88e6656bd8ae6ed7f65042740b",
         "signature": "388930c9ce486b51a58b4c7ea96cb625ea28e8c4e631c7bbe67d6bca16c9bbb5"
       },
       "../src/pc-client/calligraphy/calligraphy.controller.ts": {
         "version": "f2332ef5db791bda3fa0e32cda13dea56f85f628df0f5df349609f6da632fa0e",
         "signature": "4b978dfe4b282380904efc4a7295ef6209e79d592d814858704c14f4f0138d7d"
       },
+      "../src/pc-client/calligraphy/calligraphy.detail.controller.ts": {
+        "version": "2553b53bc7d413551b29e41cf12251125884ae3f9869cdb77c02d01cf00a8e19",
+        "signature": "7cfea0fc0fca00b6bba733cb790127c5e94cb96d03e3dc868ebc18cfa5f3b226"
+      },
       "../src/pc-client/calligraphy/calligraphy.module.ts": {
-        "version": "23bc004366af5aceb3bf397cd5d7e64cb43aec658a42326b323d8305dec7220d",
+        "version": "5d2fb0a52c9924d645e4c5b4ae3bacc32fba57224e10396b6e00f30c7aa4985a",
         "signature": "c3344567bb662a7128259689ee67f63d1ca49811a3b71e547780ec0e2ccc049a"
       },
       "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts": {
@@ -2541,13 +2585,61 @@
         "version": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078",
         "signature": "a2b176f66f0b708241265fb3b417597c9c9d21912bbb7f5cc00d99af551c2078"
       },
+      "../src/pc-client/vue/vue.controller.ts": {
+        "version": "79539aa5e407e22099fc3a2e6ad0abf74758981304f9b5575aac0d855c6d5e8e",
+        "signature": "588a4beca5844e7deee70bc7f2e27b76f36e48ea9141ae7c3e3430df4f95a6a8"
+      },
+      "../src/pc-client/vue/vue.module.ts": {
+        "version": "1a183481df494aacb3dc5bfa1afa9994e126b71500d92dbaf9be0768345da26a",
+        "signature": "82978abd1614b9b6bba5fcf7c558dd15ef17aa983e193e6f69440cd2752e3798"
+      },
+      "../src/lhsvs-pc/home/lhsvs.pc.controller.ts": {
+        "version": "d390168326d8eb11fc37f13a2072a2c02232601e63c97b1800e68822d9b76a32",
+        "signature": "8eab03b9c6d17c40d07edb7ad1ab8e65df458a6f1c3e48cd0fea6c7d21b32f86"
+      },
+      "../src/replycomment/reply.service.ts": {
+        "version": "b0cd723863f2866f15210540f29387e78bea280f9940088bfa8a89f56b1dedd5",
+        "signature": "d68f5a0ef7c9e821dbd269a571c5dcca8d8132aeb126fed20fda2bd3356b9005"
+      },
+      "../src/lhsvs-pc/article/article.detail.controller.ts": {
+        "version": "cde3ec611e2db393c36d950e64468af98753b8f881f4306b7f4091e238c54aa2",
+        "signature": "49d81cab5637ace5ba649355edb184aa664a8905bd4fe2c5a708cb9f54c8f8d0"
+      },
+      "../src/lhsvs-pc/comment/comment.controller.ts": {
+        "version": "4a160352c69b8b1f6c995f314a37a59b9605ae11f64039c94cc3768af0172de0",
+        "signature": "4e6dfe8539dacc66d4d903af10b7e707849722f6303499a4b7fdc17f3e57f5a9"
+      },
+      "../src/lhsvs-pc/reply/reply.controller.ts": {
+        "version": "2b87a48a77db3bc4d028cd10447baa9362b686cdfb305a9ab0f8ef4e015b36fa",
+        "signature": "f32ca0288167cf51a5728a4d2922af5f1b820fbb287155c71859dbf2021c14fb"
+      },
+      "../src/replycomment/reply.module.ts": {
+        "version": "73d3d2d046f9f2590f4429cc8d515b38595735ec308c2a87ec7952320cab1587",
+        "signature": "53f1be3fc61f6cc7249799f5297389011eb0159f22925ef244cafbb65637f6ce"
+      },
+      "../src/lhsvs-pc/home/lhsvs.pc.module.ts": {
+        "version": "e656118e36e0d21f4876768ee46943e8eb83a259db4511e1db6063a92cdc4d31",
+        "signature": "6aff633deae7235a3269a42eb6150724da95c50995478cbb4aa6451800ac3220"
+      },
       "../src/app.module.ts": {
-        "version": "cf84aa1b4bd7f62b6728bb2656d115992cfdbf10a76f4196e3f3ed2bd6646a8b",
+        "version": "9556bf6ae251a0f4d112103645de8e4f9fb3f372cf93ef3212618dbce0111212",
         "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88"
       },
       "../src/main.ts": {
-        "version": "96a45c729b93ddb8cb33f5a0820d37f5887f2023d6a632d3c227ac311f4ff851",
+        "version": "d4191144e0d953e364e362cc9d161491e0630f0fa25365c804e7735eaa6990d7",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "../src/common/http-cache.interceptor.ts": {
+        "version": "eeb0449f388e8d2a1b2cab94ae0dc8fdfaadb7962782c1f55df0520a81fb429d",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "../src/users/users.service.ts": {
+        "version": "7f7d149eeebf760d8c6dc16eab1f68daa01e34fee7f23baa974d5705d3aad784",
+        "signature": "294f61a788e2202faa3a1c1c2f66b9a7d57d52a726468cae5c3802cd5222f8c1"
+      },
+      "../src/users/users.module.ts": {
+        "version": "c7c8bf177f2dc7831014730b4e69cebc71dd3bf69cc8a4c0e51ff7ccb281309d",
+        "signature": "12dec6c99bd8d11167fa91a31e737abbbf8c9cc789c151a25a9a1d13f328175c"
       }
     },
     "options": {
@@ -7057,10 +7149,31 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/db/replycomment.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/article.entity.ts",
+        "../src/db/users.entity.ts",
+        "../src/db/comment.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/db/comment.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/article.entity.ts",
+        "../src/db/users.entity.ts",
+        "../src/db/replycomment.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/db/article.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/db/users.entity.ts",
         "../src/db/category.entity.ts",
+        "../src/db/comment.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7069,6 +7182,8 @@
       "../src/db/users.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/db/article.entity.ts",
+        "../src/db/comment.entity.ts",
+        "../src/db/replycomment.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7079,6 +7194,7 @@
         "../node_modules/typeorm/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/db/users.entity.ts",
+        "../src/db/article.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7149,10 +7265,18 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/common/utils.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/app.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/passport/index.d.ts",
         "../src/auth/auth.service.ts",
+        "../src/user/user.service.ts",
+        "../src/common/utils.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7470,7 +7594,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/common/utils.ts": [
+      "../node_modules/moment/moment.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7478,9 +7602,21 @@
       ],
       "../src/pc-client/home/home.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/passport/index.d.ts",
         "../src/article/article.service.ts",
         "../src/common/utils.ts",
         "../src/category/category.service.ts",
+        "../node_modules/moment/moment.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/comment/comment.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/comment.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7490,6 +7626,14 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/article/article.service.ts",
         "../src/common/utils.ts",
+        "../src/comment/comment.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/db/messageuser.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7515,7 +7659,51 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/pc-client/pc.client.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/messageuser.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/pc-client/home/contact.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/pc-client/pc.client.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/comment/comment.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/db/comment.entity.ts",
+        "../src/comment/comment.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/pc-client/home/comment.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/comment/comment.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/pc-client/home/register.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/user/user.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/pc-client/home/login.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -7530,9 +7718,19 @@
         "../src/pc-client/home/detail.controller.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/db/article.entity.ts",
+        "../src/db/messageuser.entity.ts",
+        "../src/db/comment.entity.ts",
+        "../src/db/users.entity.ts",
         "../src/pc-client/home/home.category.controller.ts",
         "../src/pc-client/home/search.article.controller.ts",
         "../src/pc-client/home/contact.controller.ts",
+        "../src/pc-client/pc.client.service.ts",
+        "../src/comment/comment.module.ts",
+        "../src/pc-client/home/comment.controller.ts",
+        "../src/user/user.service.ts",
+        "../src/user/user.module.ts",
+        "../src/pc-client/home/register.controller.ts",
+        "../src/pc-client/home/login.controller.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7547,10 +7745,18 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/pc-client/calligraphy/calligraphy.detail.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/pc-client/calligraphy/calligraphy.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/upload/upload.module.ts",
         "../src/pc-client/calligraphy/calligraphy.controller.ts",
+        "../src/pc-client/calligraphy/calligraphy.detail.controller.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/db/uploadfile.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -7916,6 +8122,101 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/pc-client/vue/vue.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/pc-client/vue/vue.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/pc-client/vue/vue.controller.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/lhsvs-pc/home/lhsvs.pc.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/moment/moment.d.ts",
+        "../src/common/utils.ts",
+        "../src/article/article.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/replycomment/reply.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/replycomment.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/lhsvs-pc/article/article.detail.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/moment/moment.d.ts",
+        "../src/common/utils.ts",
+        "../src/article/article.service.ts",
+        "../src/comment/comment.service.ts",
+        "../src/replycomment/reply.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/lhsvs-pc/comment/comment.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/passport/index.d.ts",
+        "../src/comment/comment.service.ts",
+        "../src/common/utils.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/lhsvs-pc/reply/reply.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/passport/index.d.ts",
+        "../src/replycomment/reply.service.ts",
+        "../src/common/utils.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/replycomment/reply.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/db/replycomment.entity.ts",
+        "../src/replycomment/reply.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/lhsvs-pc/home/lhsvs.pc.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/lhsvs-pc/home/lhsvs.pc.controller.ts",
+        "../src/db/article.entity.ts",
+        "../src/article/article.module.ts",
+        "../src/lhsvs-pc/article/article.detail.controller.ts",
+        "../src/lhsvs-pc/comment/comment.controller.ts",
+        "../src/comment/comment.module.ts",
+        "../src/lhsvs-pc/reply/reply.controller.ts",
+        "../src/replycomment/reply.module.ts",
+        "../src/db/comment.entity.ts",
+        "../src/db/replycomment.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
@@ -7930,6 +8231,8 @@
         "../src/pc-client/calligraphy/calligraphy.module.ts",
         "../node_modules/@nestjs/serve-static/index.d.ts",
         "../node_modules/@types/node/path.d.ts",
+        "../src/pc-client/vue/vue.module.ts",
+        "../src/lhsvs-pc/home/lhsvs.pc.module.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7940,6 +8243,34 @@
         "../node_modules/@nestjs/platform-express/index.d.ts",
         "../src/app.module.ts",
         "../node_modules/@types/node/path.d.ts",
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/common/http-cache.interceptor.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/users/users.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/db/users.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/users/users.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/users/users.service.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/db/users.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -8178,6 +8509,30 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/users/users.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/users.entity.ts"
+      ],
+      "../src/lhsvs-pc/reply/reply.controller.ts": [
+        "../src/db/replycomment.entity.ts",
+        "../src/replycomment/reply.service.ts"
+      ],
+      "../src/lhsvs-pc/comment/comment.controller.ts": [
+        "../src/db/comment.entity.ts",
+        "../src/comment/comment.service.ts"
+      ],
+      "../src/lhsvs-pc/article/article.detail.controller.ts": [
+        "../src/article/article.service.ts",
+        "../src/comment/comment.service.ts",
+        "../src/replycomment/reply.service.ts"
+      ],
+      "../src/replycomment/reply.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/replycomment.entity.ts"
+      ],
+      "../src/lhsvs-pc/home/lhsvs.pc.controller.ts": [
+        "../src/article/article.service.ts"
       ],
       "../node_modules/@nestjs/serve-static/dist/serve-static.providers.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -8462,6 +8817,21 @@
       "../src/pc-client/calligraphy/calligraphy.controller.ts": [
         "../src/upload/upload.service.ts"
       ],
+      "../src/pc-client/home/register.controller.ts": [
+        "../src/db/users.entity.ts",
+        "../src/user/user.service.ts"
+      ],
+      "../src/pc-client/home/comment.controller.ts": [
+        "../src/comment/comment.service.ts"
+      ],
+      "../src/pc-client/home/contact.controller.ts": [
+        "../src/db/messageuser.entity.ts",
+        "../src/pc-client/pc.client.service.ts"
+      ],
+      "../src/pc-client/pc.client.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/messageuser.entity.ts"
+      ],
       "../src/pc-client/home/search.article.controller.ts": [
         "../src/article/article.service.ts",
         "../src/category/category.service.ts"
@@ -8471,7 +8841,12 @@
         "../src/category/category.service.ts"
       ],
       "../src/pc-client/home/detail.controller.ts": [
-        "../src/article/article.service.ts"
+        "../src/article/article.service.ts",
+        "../src/comment/comment.service.ts"
+      ],
+      "../src/comment/comment.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/comment.entity.ts"
       ],
       "../src/pc-client/home/home.controller.ts": [
         "../src/article/article.service.ts",
@@ -8651,7 +9026,8 @@
         "../src/auth/auth.service.ts"
       ],
       "../src/app.controller.ts": [
-        "../src/auth/auth.service.ts"
+        "../src/auth/auth.service.ts",
+        "../src/user/user.service.ts"
       ],
       "../src/auth/auth.service.ts": [
         "../src/user/user.service.ts",
@@ -10406,11 +10782,23 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/db/users.entity.ts": [
-        "../src/db/article.entity.ts"
+        "../src/db/article.entity.ts",
+        "../src/db/comment.entity.ts",
+        "../src/db/replycomment.entity.ts"
       ],
       "../src/db/article.entity.ts": [
         "../src/db/users.entity.ts",
-        "../src/db/category.entity.ts"
+        "../src/db/category.entity.ts",
+        "../src/db/comment.entity.ts"
+      ],
+      "../src/db/comment.entity.ts": [
+        "../src/db/article.entity.ts",
+        "../src/db/users.entity.ts",
+        "../src/db/replycomment.entity.ts"
+      ],
+      "../src/db/replycomment.entity.ts": [
+        "../src/db/comment.entity.ts",
+        "../src/db/users.entity.ts"
       ],
       "../src/db/category.entity.ts": [
         "../src/db/article.entity.ts"
@@ -11867,6 +12255,12 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/moment/moment.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -13565,6 +13959,8 @@
       "../node_modules/@nestjs/typeorm/dist/index.d.ts",
       "../node_modules/@nestjs/typeorm/index.d.ts",
       "../src/db/category.entity.ts",
+      "../src/db/replycomment.entity.ts",
+      "../src/db/comment.entity.ts",
       "../src/db/article.entity.ts",
       "../src/db/users.entity.ts",
       "../src/user/user.service.ts",
@@ -13576,6 +13972,7 @@
       "../node_modules/@nestjs/jwt/dist/index.d.ts",
       "../node_modules/@nestjs/jwt/index.d.ts",
       "../src/auth/auth.service.ts",
+      "../src/common/utils.ts",
       "../src/app.controller.ts",
       "../src/app.service.ts",
       "../src/auth/local.strategy.ts",
@@ -13611,14 +14008,22 @@
       "../node_modules/@nestjs/platform-express/index.d.ts",
       "../src/upload/upload.controller.ts",
       "../src/upload/upload.module.ts",
-      "../src/common/utils.ts",
+      "../node_modules/moment/moment.d.ts",
       "../src/pc-client/home/home.controller.ts",
+      "../src/comment/comment.service.ts",
       "../src/pc-client/home/detail.controller.ts",
+      "../src/db/messageuser.entity.ts",
       "../src/pc-client/home/home.category.controller.ts",
       "../src/pc-client/home/search.article.controller.ts",
+      "../src/pc-client/pc.client.service.ts",
       "../src/pc-client/home/contact.controller.ts",
+      "../src/comment/comment.module.ts",
+      "../src/pc-client/home/comment.controller.ts",
+      "../src/pc-client/home/register.controller.ts",
+      "../src/pc-client/home/login.controller.ts",
       "../src/pc-client/home/home.module.ts",
       "../src/pc-client/calligraphy/calligraphy.controller.ts",
+      "../src/pc-client/calligraphy/calligraphy.detail.controller.ts",
       "../src/pc-client/calligraphy/calligraphy.module.ts",
       "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
@@ -13661,8 +14066,20 @@
       "../node_modules/@nestjs/serve-static/dist/serve-static.providers.d.ts",
       "../node_modules/@nestjs/serve-static/dist/index.d.ts",
       "../node_modules/@nestjs/serve-static/index.d.ts",
+      "../src/pc-client/vue/vue.controller.ts",
+      "../src/pc-client/vue/vue.module.ts",
+      "../src/lhsvs-pc/home/lhsvs.pc.controller.ts",
+      "../src/replycomment/reply.service.ts",
+      "../src/lhsvs-pc/article/article.detail.controller.ts",
+      "../src/lhsvs-pc/comment/comment.controller.ts",
+      "../src/lhsvs-pc/reply/reply.controller.ts",
+      "../src/replycomment/reply.module.ts",
+      "../src/lhsvs-pc/home/lhsvs.pc.module.ts",
       "../src/app.module.ts",
       "../src/main.ts",
+      "../src/common/http-cache.interceptor.ts",
+      "../src/users/users.service.ts",
+      "../src/users/users.module.ts",
       "../node_modules/typescript/lib/lib.es2015.d.ts",
       "../node_modules/typescript/lib/lib.es2016.d.ts",
       "../node_modules/typescript/lib/lib.es2017.d.ts",

@@ -1,3 +1,4 @@
+export declare const getCookie: (req: any) => any;
 export declare const encryptSecret: (value: any) => any;
 export declare const decryptSecret: (value: any) => any;
 export declare const arrColor: string[];

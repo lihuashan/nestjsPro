@@ -37,12 +37,12 @@ let ArticleDetailController = class ArticleDetailController {
             articleList = JSON.parse(articleList);
             let categoryList = JSON.stringify(category);
             categoryList = JSON.parse(categoryList);
-            let data = {
+            const data = {
                 content: articleList,
-                categoryList: categoryList
+                categoryList,
             };
             console.log(data);
-            return { msg: 99, data: data };
+            return { msg: 99, data };
         });
     }
 };

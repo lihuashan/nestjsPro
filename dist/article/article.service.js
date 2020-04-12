@@ -58,8 +58,8 @@ let ArticleService = class ArticleService {
         return __awaiter(this, void 0, void 0, function* () {
             return this.articleRepository
                 .createQueryBuilder('Article')
-                .innerJoinAndSelect("Article.category", "category")
-                .orderBy("Article.created_time", "DESC")
+                .innerJoinAndSelect('Article.category', 'category')
+                .orderBy('Article.created_time', 'DESC')
                 .getMany();
         });
     }
@@ -70,7 +70,7 @@ let ArticleService = class ArticleService {
     }
     findAndCount(id) {
         return __awaiter(this, void 0, void 0, function* () {
-            let [allArticle, articlesCount] = yield this.articleRepository.findAndCount({ category: id });
+            const [allArticle, articlesCount] = yield this.articleRepository.findAndCount({ category: id });
             return { allArticle, articlesCount };
         });
     }
@@ -90,16 +90,17 @@ let ArticleService = class ArticleService {
         return __awaiter(this, void 0, void 0, function* () {
             return this.articleRepository
                 .createQueryBuilder('Article')
-                .innerJoinAndSelect("Article.category", "category")
-                .orderBy("Article.id", "DESC")
-                .skip((params.P - 1) * params.pageSize)
+                .innerJoinAndSelect('Article.category', 'category')
+                .leftJoinAndSelect('Article.comment', 'comment')
+                .orderBy('Article.created_time', 'DESC')
+                .skip((params.p - 1) * params.pageSize)
                 .take(params.pageSize)
                 .getManyAndCount();
         });
     }
     detailById(id) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.articleRepository.findOne(id, {
+            return this.articleRepository.findOne(id, {
                 join: {
                     alias: 'Article',
                     leftJoinAndSelect: {
@@ -109,13 +110,21 @@ let ArticleService = class ArticleService {
             });
         });
     }
+    updateById(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const article = yield this.articleRepository.findOne(id);
+            const num = article.viewNum + 1;
+            console.log(num, '@@@@@@@@@@@@@');
+            return this.articleRepository.update({ id }, { viewNum: num });
+        });
+    }
     homeCategoryFindById(params) {
         return __awaiter(this, void 0, void 0, function* () {
             return this.articleRepository
                 .createQueryBuilder('Article')
-                .innerJoinAndSelect("Article.category", "category")
+                .innerJoinAndSelect('Article.category', 'category')
                 .where({ category: params.id })
-                .orderBy("Article.created_time", "DESC")
+                .orderBy('Article.created_time', 'DESC')
                 .skip((params.P - 1) * params.pageSize)
                 .take(params.pageSize)
                 .getManyAndCount();
@@ -125,9 +134,9 @@ let ArticleService = class ArticleService {
         return __awaiter(this, void 0, void 0, function* () {
             return this.articleRepository
                 .createQueryBuilder('Article')
-                .innerJoinAndSelect("Article.category", "category")
+                .innerJoinAndSelect('Article.category', 'category')
                 .where({ category: id })
-                .orderBy("Article.created_time", "DESC")
+                .orderBy('Article.created_time', 'DESC')
                 .getMany();
         });
     }
@@ -135,10 +144,10 @@ let ArticleService = class ArticleService {
         return __awaiter(this, void 0, void 0, function* () {
             return this.articleRepository
                 .createQueryBuilder('Article')
-                .where("Article.title LIKE :filter1", { filter1: "%" + params.wk + "%" })
-                .orWhere("Article.subTitle LIKE :filter2", { filter2: "%" + params.wk + "%" })
-                .orWhere("Article.description LIKE :filter3", { filter3: "%" + params.wk + "%" })
-                .orderBy("Article.id")
+                .where('Article.title LIKE :filter1', { filter1: '%' + params.wk + '%' })
+                .orWhere('Article.subTitle LIKE :filter2', { filter2: '%' + params.wk + '%' })
+                .orWhere('Article.description LIKE :filter3', { filter3: '%' + params.wk + '%' })
+                .orderBy('Article.id')
                 .skip((params.P - 1) * params.pageSize)
                 .take(params.pageSize)
                 .getManyAndCount();
@@ -149,7 +158,19 @@ let ArticleService = class ArticleService {
             return this.articleRepository
                 .createQueryBuilder('Article')
                 .where({ recommendation: true })
-                .orderBy("Article.created_time", "DESC")
+                .orderBy('Article.created_time', 'DESC')
+                .take(30)
+                .getMany();
+        });
+    }
+    lhsvsPc() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.articleRepository
+                .createQueryBuilder('Article')
+                .innerJoinAndSelect('Article.category', 'category')
+                .leftJoinAndSelect('Article.comment', 'comment')
+                .orderBy('Article.created_time', 'DESC')
+                .offset(0)
                 .take(30)
                 .getMany();
         });

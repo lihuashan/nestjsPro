@@ -18,6 +18,8 @@ const upload_module_1 = require("./upload/upload.module");
 const home_module_1 = require("./pc-client/home/home.module");
 const calligraphy_module_1 = require("./pc-client/calligraphy/calligraphy.module");
 const path_1 = require("path");
+const vue_module_1 = require("./pc-client/vue/vue.module");
+const lhsvs_pc_module_1 = require("./lhsvs-pc/home/lhsvs.pc.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -28,7 +30,7 @@ AppModule = __decorate([
                 host: 'localhost',
                 port: 3306,
                 username: 'root',
-                password: 'huashan211!',
+                password: 'huashan',
                 database: 'lhsvs',
                 entities: [path_1.join(__dirname, '**/**.entity{.ts,.js}')],
                 synchronize: true,
@@ -40,6 +42,8 @@ AppModule = __decorate([
             upload_module_1.UploadModule,
             home_module_1.HomeModule,
             calligraphy_module_1.CalligraphyModule,
+            vue_module_1.VueModule,
+            lhsvs_pc_module_1.LhsvsPcModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

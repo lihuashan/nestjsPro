@@ -10,16 +10,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@nestjs/core");
+const cookieParser = require("cookie-parser");
 const app_module_1 = require("./app.module");
 const path_1 = require("path");
 function bootstrap() {
     return __awaiter(this, void 0, void 0, function* () {
         const app = yield core_1.NestFactory.create(app_module_1.AppModule);
+        app.enableCors();
+        app.use(cookieParser());
         app.useStaticAssets(path_1.join(__dirname, '..', 'pc/public'));
         app.setBaseViewsDir(path_1.join(__dirname, '..', 'pc/views'));
         app.setViewEngine('hbs');
         app.set({
-            CookieName: 'CookieValue; SameSite=Lax;'
+            CookieName: 'CookieValue; SameSite=Lax;',
         });
         yield app.listen(4000);
     });

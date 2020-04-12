@@ -26,12 +26,21 @@ const typeorm_1 = require("typeorm");
 const typeorm_2 = require("@nestjs/typeorm");
 const users_entity_1 = require("../db/users.entity");
 let UserService = class UserService {
-    constructor(UserRepository) {
-        this.UserRepository = UserRepository;
+    constructor(userRepository) {
+        this.userRepository = userRepository;
     }
     findOne(username) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.UserRepository.findOne({ username: username });
+            return yield this.userRepository.findOne({ username });
+        });
+    }
+    save(req) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const user = new users_entity_1.User();
+            user.username = req.username;
+            user.password = req.password;
+            user.type = req.type ? req.type || 4 : 0;
+            return yield this.userRepository.save(user);
         });
     }
 };

@@ -12,7 +12,7 @@ export declare class SearchArticleController {
     categoryList: any;
     isShowPagination: boolean;
     msg: any;
-    root(wk: string, P: number, res: any): Promise<{
+    root(wk: string, P: number): Promise<{
         msg: any;
         data: {
             title: string;

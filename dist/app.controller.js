@@ -24,27 +24,79 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const passport_1 = require("@nestjs/passport");
 const auth_service_1 = require("./auth/auth.service");
+const user_service_1 = require("./user/user.service");
 let AppController = class AppController {
-    constructor(authService) {
+    constructor(authService, userService) {
         this.authService = authService;
+        this.userService = userService;
     }
-    login(req) {
+    login(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            return this.authService.login(req.user);
+            const loginInfo = yield this.authService.login(req.user);
+            const { access_token, userId, type, username } = loginInfo;
+            const token = JSON.stringify({ access_token, userId, type, username });
+            const userInfo = { access_token, userId, type, username };
+            res.cookie('user_log_info', token, { expires: new Date(Date.now() + 3600000), httpOnly: true });
+            res.json({ code: 200, data: userInfo, msg: '' });
+        });
+    }
+    reg(body, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const isHas = yield this.userService.findOne(body.username);
+            if (isHas) {
+                return { code: 10001, data: null, msg: '用户名已经存在！' };
+            }
+            const user = yield this.userService.save(body);
+            return this.login({ user }, res);
+        });
+    }
+    logout(res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            res.cookie('user_log_info', '', { expires: new Date(0), httpOnly: true });
+            res.json({ code: 200, data: null, msg: '您已退出登录！' });
         });
     }
     getProfile(req) {
-        return req.user;
+        try {
+            console.log(req.user);
+            return req.user;
+        }
+        catch (e) {
+            console.log(e);
+            return e;
+        }
+    }
+    root(res, req) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const user = yield this.authService.login(req.user);
+            console.log(user, '----------------');
+            res.setHeader('Authorization', 'Bearer ' + user.access_token);
+            return { msg: 'XX', data: user };
+        });
     }
 };
 __decorate([
     common_1.UseGuards(passport_1.AuthGuard('local')),
     common_1.Post('login'),
-    __param(0, common_1.Request()),
+    __param(0, common_1.Request()), __param(1, common_1.Res()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], AppController.prototype, "login", null);
+__decorate([
+    common_1.Post('reg'),
+    __param(0, common_1.Body()), __param(1, common_1.Res()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], AppController.prototype, "reg", null);
+__decorate([
+    common_1.Post('logout'),
+    __param(0, common_1.Res()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
-], AppController.prototype, "login", null);
+], AppController.prototype, "logout", null);
 __decorate([
     common_1.UseGuards(passport_1.AuthGuard('jwt')),
     common_1.Get('me'),
@@ -53,8 +105,17 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getProfile", null);
+__decorate([
+    common_1.UseGuards(passport_1.AuthGuard('local')),
+    common_1.Post('pc/login'),
+    common_1.Render('home/index'),
+    __param(0, common_1.Res()), __param(1, common_1.Request()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], AppController.prototype, "root", null);
 AppController = __decorate([
     common_1.Controller('api'),
-    __metadata("design:paramtypes", [auth_service_1.AuthService])
+    __metadata("design:paramtypes", [auth_service_1.AuthService, user_service_1.UserService])
 ], AppController);
 exports.AppController = AppController;

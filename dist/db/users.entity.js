@@ -11,6 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
 const article_entity_1 = require("./article.entity");
+const comment_entity_1 = require("./comment.entity");
+const replyComment_entity_1 = require("./replyComment.entity");
 let User = class User {
 };
 __decorate([
@@ -26,19 +28,19 @@ __decorate([
     __metadata("design:type", String)
 ], User.prototype, "password", void 0);
 __decorate([
-    typeorm_1.Column({ type: 'tinyint', name: 'user_type' }),
+    typeorm_1.Column({ type: 'tinyint', name: 'user_type', default: 4 }),
     __metadata("design:type", Number)
 ], User.prototype, "type", void 0);
 __decorate([
-    typeorm_1.Column({ name: 'user_email' }),
+    typeorm_1.Column({ name: 'user_email', default: null }),
     __metadata("design:type", String)
 ], User.prototype, "email", void 0);
 __decorate([
-    typeorm_1.Column({ name: 'user_pic' }),
+    typeorm_1.Column({ name: 'user_pic', default: null }),
     __metadata("design:type", String)
 ], User.prototype, "userPic", void 0);
 __decorate([
-    typeorm_1.Column({ name: 'login_ip' }),
+    typeorm_1.Column({ name: 'login_ip', default: null }),
     __metadata("design:type", String)
 ], User.prototype, "loginIp", void 0);
 __decorate([
@@ -50,21 +52,29 @@ __decorate([
     __metadata("design:type", Date)
 ], User.prototype, "updatedDate", void 0);
 __decorate([
-    typeorm_1.Column({ name: 'user_extend' }),
+    typeorm_1.Column({ name: 'user_extend', default: null }),
     __metadata("design:type", String)
 ], User.prototype, "userExtend", void 0);
 __decorate([
-    typeorm_1.Column(),
+    typeorm_1.Column({ default: null }),
     __metadata("design:type", Number)
 ], User.prototype, "age", void 0);
 __decorate([
-    typeorm_1.Column(),
+    typeorm_1.Column({ default: null }),
     __metadata("design:type", String)
 ], User.prototype, "address", void 0);
 __decorate([
     typeorm_1.OneToMany(type => article_entity_1.Article, article => article.user),
     __metadata("design:type", Array)
 ], User.prototype, "articles", void 0);
+__decorate([
+    typeorm_1.OneToMany(type => comment_entity_1.Comment, comment => comment.user),
+    __metadata("design:type", Array)
+], User.prototype, "comment", void 0);
+__decorate([
+    typeorm_1.OneToMany(type => replyComment_entity_1.ReplyComment, replyComment => replyComment.user),
+    __metadata("design:type", Array)
+], User.prototype, "replyComment", void 0);
 User = __decorate([
     typeorm_1.Entity()
 ], User);

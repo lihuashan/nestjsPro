@@ -8,6 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -19,14 +22,27 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
+const pc_client_service_1 = require("../pc.client.service");
 let ContactController = class ContactController {
-    constructor() { }
+    constructor(pcClientService) {
+        this.pcClientService = pcClientService;
+    }
+    create(body) {
+        return this.pcClientService.save(body);
+    }
     root() {
         return __awaiter(this, void 0, void 0, function* () {
             return { msg: 99, data: '联系方式' };
         });
     }
 };
+__decorate([
+    common_1.Post('message'),
+    __param(0, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ContactController.prototype, "create", null);
 __decorate([
     common_1.Get(),
     common_1.Render('contact/index'),
@@ -36,6 +52,6 @@ __decorate([
 ], ContactController.prototype, "root", null);
 ContactController = __decorate([
     common_1.Controller('contact'),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [pc_client_service_1.PcClientService])
 ], ContactController);
 exports.ContactController = ContactController;

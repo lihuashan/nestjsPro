@@ -15,8 +15,10 @@ export declare class ArticleService {
     findOneDetailId(id: any): Promise<Article>;
     homeFind(params: any): Promise<any>;
     detailById(id: any): Promise<Article>;
+    updateById(id: any): Promise<import("typeorm").UpdateResult>;
     homeCategoryFindById(params: any): Promise<any>;
     homeCategoryFindNameById(id: any): Promise<any>;
     searchArticleByWordKey(params: any): Promise<any>;
     recommendArticleFindAll(): Promise<any>;
+    lhsvsPc(): Promise<any>;
 }

@@ -50,9 +50,9 @@ let AuthService = class AuthService {
     }
     login(user) {
         return __awaiter(this, void 0, void 0, function* () {
-            console.log(user, '--------------');
             const payload = { username: user.username, sub: user.id };
-            return Object.assign({ access_token: this.jwtService.sign(payload), userId: user.id }, user);
+            const token = yield this.jwtService.sign(payload);
+            return Object.assign({ access_token: token, userId: user.id }, user);
         });
     }
 };

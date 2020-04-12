@@ -61,7 +61,7 @@ __decorate([
         },
         fileFilter: (req, file, cb) => {
             let ext = path.extname(file.originalname);
-            let extArr = ['.jpg', '.jpeg', '.gif', '.png'];
+            let extArr = ['.jpg', '.jpeg', '.gif', '.png', '.mp3'];
             if (!extArr.includes(ext)) {
                 cb(new Error('扩展名不正确'), false);
             }

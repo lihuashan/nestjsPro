@@ -25,6 +25,7 @@ const common_1 = require("@nestjs/common");
 const article_service_1 = require("../../article/article.service");
 const utils_1 = require("../../common/utils");
 const category_service_1 = require("../../category/category.service");
+const moment = require("moment");
 let HomeController = class HomeController {
     constructor(articleService, categoryService) {
         this.articleService = articleService;
@@ -36,7 +37,6 @@ let HomeController = class HomeController {
     }
     root(P, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            res.setHeader('Set-Cookie', ['widget_session=abc123', 'SameSite=Strict', 'Secure']);
             try {
                 console.log(P);
                 if (P) {
@@ -61,9 +61,12 @@ let HomeController = class HomeController {
                     this.articleList = JSON.parse(this.articleList);
                     for (let i = 0; i < this.articleList.length; i++) {
                         this.articleList[i]['tempColor'] = utils_1.arrColor[Math.round(Math.random() * 23)];
+                        this.articleList[i]['created_time'] = moment(this.articleList[i]['created_time']).format('YYYY-MM-DD HH:mm:ss');
                         let temp = this.articleList[i]['id'];
                         temp = yield utils_1.encryptSecret(temp);
                         this.articleList[i]['ida'] = temp;
+                        this.articleList[i]['commentListNum'] = this.articleList[i].comment.length;
+                        console.log(this.articleList[i]);
                     }
                     this.msg = null;
                 }
@@ -119,6 +122,7 @@ let HomeController = class HomeController {
 };
 __decorate([
     common_1.Get(),
+    common_1.Header('Cache-Control', 'defineHeader'),
     common_1.Render('home/index'),
     __param(0, common_1.Query('P')), __param(1, common_1.Res()),
     __metadata("design:type", Function),

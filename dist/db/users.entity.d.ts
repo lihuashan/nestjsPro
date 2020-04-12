@@ -1,4 +1,6 @@
 import { Article } from './article.entity';
+import { Comment } from './comment.entity';
+import { ReplyComment } from './replyComment.entity';
 export declare class User {
     id: number;
     username: string;
@@ -13,4 +15,6 @@ export declare class User {
     age: number;
     address: string;
     articles: Article[];
+    comment: Comment[];
+    replyComment: ReplyComment[];
 }

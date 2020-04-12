@@ -1,8 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const CryptoJS = require("crypto-js");
-const key = CryptoJS.enc.Utf8.parse("U2FsdGVkX1+9qiNsVs+gCDFkG975DX47lUaZ0MTPy3pr149+34ZGgA==");
+const key = CryptoJS.enc.Utf8.parse('U2FsdGVkX1+9qiNsVs+gCDFkG975DX47lUaZ0MTPy3pr149+34ZGgA==');
 const iv = CryptoJS.enc.Utf8.parse('U2FsdGVkX1+IXULGfBMRRRzDt7j6thYAHcoffCX2W0U=');
+exports.getCookie = (req) => {
+    try {
+        if (req !== undefined) {
+            return JSON.parse(req);
+        }
+    }
+    catch (e) {
+        console.log(e);
+    }
+};
 exports.encryptSecret = (value) => {
     let temp;
     temp = CryptoJS.DES.encrypt(value.toString(), key, { iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 }).toString();

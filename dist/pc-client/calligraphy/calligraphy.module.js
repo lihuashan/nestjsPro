@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const upload_module_1 = require("../../upload/upload.module");
 const calligraphy_controller_1 = require("./calligraphy.controller");
+const calligraphy_detail_controller_1 = require("./calligraphy.detail.controller");
 const typeorm_1 = require("@nestjs/typeorm");
 const uploadFile_entity_1 = require("../../db/uploadFile.entity");
 let CalligraphyModule = class CalligraphyModule {
@@ -20,7 +21,8 @@ CalligraphyModule = __decorate([
             upload_module_1.UploadModule
         ],
         controllers: [
-            calligraphy_controller_1.CalligraphyController
+            calligraphy_controller_1.CalligraphyController,
+            calligraphy_detail_controller_1.CalligraphyDetailController
         ]
     })
 ], CalligraphyModule);

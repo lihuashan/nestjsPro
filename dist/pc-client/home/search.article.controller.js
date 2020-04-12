@@ -33,9 +33,8 @@ let SearchArticleController = class SearchArticleController {
         this.totalCount = 0;
         this.isShowPagination = false;
     }
-    root(wk, P, res) {
+    root(wk, P) {
         return __awaiter(this, void 0, void 0, function* () {
-            res.setHeader('Set-Cookie', ['widget_session=abc123', 'SameSite=Strict', 'Secure']);
             console.log(P, wk, '--------------');
             try {
                 if (wk) {
@@ -115,9 +114,9 @@ let SearchArticleController = class SearchArticleController {
 __decorate([
     common_1.Get(':wk'),
     common_1.Render('home/index'),
-    __param(0, common_1.Param('wk')), __param(1, common_1.Query('P')), __param(2, common_1.Res()),
+    __param(0, common_1.Param('wk')), __param(1, common_1.Query('P')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String, Number, Object]),
+    __metadata("design:paramtypes", [String, Number]),
     __metadata("design:returntype", Promise)
 ], SearchArticleController.prototype, "root", null);
 SearchArticleController = __decorate([

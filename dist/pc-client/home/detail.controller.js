@@ -24,34 +24,42 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const article_service_1 = require("../../article/article.service");
 const utils_1 = require("../../common/utils");
+const comment_service_1 = require("../../comment/comment.service");
 const moment = require('moment');
 let DetailController = class DetailController {
-    constructor(articleService) {
+    constructor(articleService, commentService) {
         this.articleService = articleService;
+        this.commentService = commentService;
     }
-    root(ida, res) {
+    root(ida, res, req) {
         return __awaiter(this, void 0, void 0, function* () {
-            res.setHeader('Set-Cookie', ['widget_session=abc123', 'SameSite=Strict', 'Secure']);
-            const article = yield this.articleService.detailById(utils_1.decryptSecret(ida));
+            let id = utils_1.decryptSecret(ida);
+            yield this.articleService.updateById(id);
+            const article = yield this.articleService.detailById(id);
+            const comment = yield this.commentService.findById(id);
             let articleDetail = JSON.stringify(article);
             articleDetail = JSON.parse(articleDetail);
+            let commentList = JSON.stringify(comment);
+            commentList = JSON.parse(commentList);
             const data = articleDetail;
             data['created_time'] = moment(articleDetail['created_time']).format('YYYY-MM-DD HH:mm:ss');
-            console.log(data['created_time']);
-            return { msg: 99, data: data };
+            data['commentList'] = commentList;
+            console.log(data, '-------------');
+            return { msg: 99, data: data, };
         });
     }
 };
 __decorate([
     common_1.Get(':ida'),
+    common_1.Header('Cache-Control', 'defineHeader'),
     common_1.Render('detail/detail'),
-    __param(0, common_1.Param('ida')), __param(1, common_1.Res()),
+    __param(0, common_1.Param('ida')), __param(1, common_1.Res()), __param(2, common_1.Req()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String, Object]),
+    __metadata("design:paramtypes", [String, Object, Object]),
     __metadata("design:returntype", Promise)
 ], DetailController.prototype, "root", null);
 DetailController = __decorate([
     common_1.Controller('detail'),
-    __metadata("design:paramtypes", [article_service_1.ArticleService])
+    __metadata("design:paramtypes", [article_service_1.ArticleService, comment_service_1.CommentService])
 ], DetailController);
 exports.DetailController = DetailController;
